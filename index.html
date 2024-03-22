@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lab 3</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+
+      <p>ITMD-441: Lab 3 - Aung Kham Naung</p>
+      <h1>Tip Calculator</h1>
+      <div class="form-wrapper">
+        <form action="">
+          <ul>
+            <li>
+              <span class="label-wrapper">
+                <label for="bill">Bill Total ($):</label>
+              </span>
+              <span class="input-wrapper">
+                <input type="text" name="bill_amount" id="bill" placeholder="0.00">
+              </span>
+            </li>
+
+            <li>
+              <span class="label-wrapper">
+                <label for="tip">Tip:</label>
+              </span>
+              <span class="input-wrapper">
+                <input type="range" name="tip_slider" id="tip" value=0 min="0" max="100" step="1">
+              </span>
+            </li>
+
+            <li>
+              <span class="label-wrapper">
+                <label for="percentage">Tip Percentage (%):</label>
+              </span>
+              <span class="input-wrapper">
+                <input type="text" name="tip_percentage" id="percentage" value="0" disabled="disabled">
+              </span>
+            </li>
+
+            <li>
+              <span class="label-wrapper">
+                <label for="amount">Tip Amount ($):</label>
+              </span>
+              <span class="input-wrapper">
+                <input type="text" name="tip_amount" id="amount" disabled="disabled" value="0.00" placeholder="0.00">
+              </span>
+            </li>
+
+            <li>
+              <span class="label-wrapper">
+                <label for="total">Total Bill with Tip ($):</label>
+              </span>
+              <span class="input-wrapper">
+                <input type="text" name="total_bill" id="total" disabled="disabled" placeholder="0.00">
+              </span>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
